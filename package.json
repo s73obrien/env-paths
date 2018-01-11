@@ -1,24 +1,30 @@
 {
-  "name": "env-paths",
+  "name": "env-paths-ts",
   "version": "1.0.0",
-  "description": "Get paths for storing things like data, config, cache, etc",
+  "description": "env-paths rewritten for Typescript",
   "license": "MIT",
-  "repository": "sindresorhus/env-paths",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
+  "repository": "s73obrien/env-paths-ts",
+  "contributors": [
+    {
+      "name": "Sean O'Brien",
+      "email": "s73obrien@hotmail.com"
+    }
+  ],
   "engines": {
     "node": ">=4"
   },
   "scripts": {
+    "prepare": "npm run build",
+    "build": "tsc",
     "test": "xo && ava"
   },
   "files": [
     "index.js"
   ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "keywords": [
+    "typescript",
     "common",
     "user",
     "paths",
@@ -37,7 +43,9 @@
     "unix"
   ],
   "devDependencies": {
+    "@types/node": "~9.3.0",
     "ava": "*",
+    "typescript": "^2.6.2",
     "xo": "*"
   },
   "xo": {

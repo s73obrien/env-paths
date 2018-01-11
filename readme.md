@@ -1,6 +1,8 @@
-# env-paths [![Build Status](https://travis-ci.org/sindresorhus/env-paths.svg?branch=master)](https://travis-ci.org/sindresorhus/env-paths)
+# env-paths-ts [![Build Status](https://travis-ci.org/s73obrien/env-paths-ts.svg?branch=master)](https://travis-ci.org/s73obrien/env-paths-ts)
 
 > Get paths for storing things like data, config, cache, etc
+
+*This is a re-write of [env-paths](https://github.com/sindresorhus/env-paths) for use in Typescript.  It can also be used as a drop-in replacement for [env-paths](https://github.com/sindresorhus/env-paths)*
 
 Uses the correct OS-specific paths. Most developers get this wrong.
 
@@ -8,14 +10,14 @@ Uses the correct OS-specific paths. Most developers get this wrong.
 ## Install
 
 ```
-$ npm install --save env-paths
+$ npm install --save env-paths-ts
 ```
 
 
 ## Usage
 
 ```js
-const envPaths = require('env-paths');
+const envPaths = require('env-paths-ts');
 const paths = envPaths('MyApp');
 
 paths.data;
@@ -70,4 +72,4 @@ Directory for temporary files.
 
 ## License
 
-MIT © [Sindre Sorhus](https://sindresorhus.com)
+MIT © Sean O'Brien
