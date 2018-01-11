@@ -56,8 +56,8 @@ if (process.platform === 'linux') {
 			log: 'XDG_STATE_HOME'
 		};
 
-		Object.values(envVars).forEach(env => {
-			process.env[env] = `/tmp/${env}`;
+		Object.keys(envVars).forEach(env => {
+			process.env[envVars[env]] = `/tmp/${envVars[env]}`;
 		});
 
 		const name = 'unicorn';
