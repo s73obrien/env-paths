@@ -1,6 +1,6 @@
 {
   "name": "env-paths-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "env-paths rewritten for Typescript",
   "license": "MIT",
   "repository": "s73obrien/env-paths-ts",
@@ -19,7 +19,8 @@
     "test": "xo && ava"
   },
   "files": [
-    "index.js"
+    "index.js",
+    "index.d.ts"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
