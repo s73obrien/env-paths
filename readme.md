@@ -16,6 +16,19 @@ $ npm install --save env-paths-ts
 
 ## Usage
 
+### Typescript
+```ts
+  import envPaths from 'env-paths-ts';
+  const paths = envPaths('MyApp');
+
+  paths.data;
+  //=> 'home/sindresorhus/.local/share/MyApp-nodejs'
+
+  paths.config;
+  //=> 'home/sindresorhus/.config/MyApp-nodejs'
+```
+
+### Javascript
 ```js
 const envPaths = require('env-paths-ts');
 const paths = envPaths('MyApp');
